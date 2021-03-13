@@ -1,0 +1,95 @@
+body {
+	background-color: #FDFEFE;
+	color: #17202A;
+	font-family: 'Cabin', sans-serif;
+
+}
+
+/** HEADER **/
+#sidebar-nav {
+  width: 5%;
+  position: fixed;
+  top: 10%;
+  margin-left: 5%;
+  float: left;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/** LINKS **/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/**BODY**/
+
+/**TOP**/
+.grid-container {
+	margin-top: 5%;
+	margin-left: 23%;
+	height: 80vh;
+	width: 60vw;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+	grid-gap: 30px;
+}
+
+.grid-item {
+ 	padding: 0px;
+	font-weight: 600;
+}
+
+.item-1 {
+	font-style: italic;
+	font-size: 14px;
+
+}
+.item-2 {
+	font-size: 14px;
+	max-width: 80%;
+}
+
+img {
+	max-width: 75%;
+}
+
+figcaption {
+	max-width: 75%;
+	margin: 0;
+}
+
+/**PHOTOS**/
+iframe {
+	padding: 1.5%;
+    width: 15%;
+    float: left;
+    height: 110px;
+}
+
+.photos {
+	padding: 1.5%;
+	width: 15%;
+	float: left;
+}
+
+#collage {
+	margin-left:15%;
+}
+
+.bullet {
+	margin-left:20%;
+	margin-top: 5%;
+}
