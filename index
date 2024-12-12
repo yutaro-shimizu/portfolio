@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+	<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SJSQFXD7D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0SJSQFXD7D');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<title>Yutaro Shimizu</title>
+	<link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		#fullpage{
+			user-select: none;
+			pointer-events: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="sidebar-nav">
+		<a class="dynamicColor" href="index.html">Top</a>
+		<a class="dynamicColor" href="about.html">About</a>
+		<a class="dynamicColor" href="portfolio.html">Portfolio</a>
+		<a class="dynamicColor" href="lesson1.html">Beta</a>
+	</div>
+
+	<div id="collage">
+		<div class="section cg-image-wrapper">
+			<img id="image2" class="photos dark" src="Images/Orange1.jpg" alt="Orange1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image3" class="photos light" src="Images/Orange3.jpg" alt="Orange3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image4" class="photos light" src="Images/Black1.jpg" alt="Black1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image7" class="photos light" src="Images/Green1.jpg" alt="Green1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image5" class="photos light" src="Images/Green2.jpg" alt="Green2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image22" class="photos dark" src="Images/Black2.jpg" alt="Black2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image21" class="photos light" src="Images/Black6.jpg" alt="Black6">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image23" class="photos dark" src="Images/Black4.jpg" alt="Black4">
+		</div>
+
+		<div class="section cg-image-wrapper">
+			<img id="image25" class="photos dark" src="Images/Black5.jpg" alt="Black5">
+		</div>
+
+		<div class="section cg-image-wrapper">
+			<img id="image24" class="photos dark" src="Images/Black3.jpg" alt="Black3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image12" class="photos light" src="Images/White6.jpg" alt="White6">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image11" class="photos light" src="Images/Pink2.jpg" alt="Pink2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image10" class="photos light" src="Images/Pink1.jpg" alt="Pink1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image8" class="photos dark" src="Images/Green3.jpg" alt="Green3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image9" class="photos dark" src="Images/Green4.jpg" alt="Green4">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image14" class="photos dark" src="Images/White1.jpg" alt="White1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image13" class="photos dark" src="Images/White4.jpg" alt="White4">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image1" class="photos dark" src="Images/Orange2.jpg" alt="Orange2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image16" class="photos dark" src="Images/White2.jpg" alt="White2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image15" class="photos dark" src="Images/White3.jpg" alt="White3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image19" class="photos light" src="Images/Yellow2.jpg" alt="Yellow2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image19" class="photos light" src="Images/Yellow4.jpg" alt="Yellow2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image17" class="photos dark" src="Images/Yellow1.jpg" alt="Yellow1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image6" class="photos dark" src="Images/White5.jpg" alt="White5">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image20" class="photos light" src="Images/Blue1.jpg" alt="Blue1">
+		</div>
+
+		<!-- <iframe src="https://www.youtube.com/embed/IRnDz0_NlX0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+			 -->
+	</div>
+	
+
+	<script>
+
+	// Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
+		const navbarAnchors = document.querySelectorAll('.dynamicColor');
+		const images = document.querySelectorAll('.photos');
+
+		const changeNavbarColor = (entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					if (entry.target.classList.contains('light')) {
+						navbarAnchors.forEach(anchor => {
+							anchor.classList.add('whiteFont');
+							anchor.classList.remove('blackFont');
+						});
+					} else if (entry.target.classList.contains('dark')) {
+						navbarAnchors.forEach(anchor => {
+							anchor.classList.add('blackFont');
+							anchor.classList.remove('whiteFont');
+						});
+					}
+				}
+			});
+		};
+
+		const observer = new IntersectionObserver(changeNavbarColor, {
+			threshold: 0.5,
+		});
+
+		images.forEach(image => {
+			observer.observe(image);
+		});
+	</script>
+	<script>
+		// document.addEventListener("contextmenu", (event) => {
+		// 	event.preventDefault();
+		// });
+	</script>
+</body>
+
+</html>
