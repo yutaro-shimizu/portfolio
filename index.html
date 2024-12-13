@@ -1,46 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SJSQFXD7D"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'G-0SJSQFXD7D');
-		</script>
-		
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-		<title>Yutaro Shimizu</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-	</head>
 
-	<body>
-		<div id="sidebar-nav">
-			<a href="index.html">Top</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="photos.html">Films</a>
-			<a href="lesson1.html">Beta</a>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+	<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.31/fullpage.min.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SJSQFXD7D"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0SJSQFXD7D');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<title>Yutaro Shimizu</title>
+	<link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="sidebar-nav">
+		<a class="dynamicColor" href="index.html">Top</a>
+		<a class="dynamicColor" href="about.html">About</a>
+		<a class="dynamicColor" href="portfolio.html">Portfolio</a>
+		<a class="dynamicColor" href="lesson1.html">Beta</a>
+	</div>
+
+
+    <div id="fullpage">
+        <div class="section cg-image-wrapper">
+			<img id="image2" class="photos light" src="Images/Orange1.jpg" alt="Orange1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image3" class="photos light" src="Images/Orange3.jpg" alt="Orange3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image4" class="photos light" src="Images/Black1.jpg" alt="Black1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image7" class="photos light" src="Images/Green1.jpg" alt="Green1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image5" class="photos light" src="Images/Green2.jpg" alt="Green2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image22" class="photos dark" src="Images/Black2.jpg" alt="Black2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image21" class="photos light" src="Images/Black6.jpg" alt="Black6">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image23" class="photos dark" src="Images/Black4.jpg" alt="Black4">
 		</div>
 
-		<div class="grid-container">
-		    <div class="grid-item item-1">
-				<img src="Images/top.jpg" alt="profile image">
-				<figcaption>Volcano fieldwork at Mt.Bukansan. March 2021, South Korea. Photo by Ellie. </figcaption>
-		    </div>
-		    <div class="grid-item item-2">
-				Hello!
-				<p>I'm Yutaro, and I studied Ecology and Machine Learning at Minerva University, headquartered in San Francisco. I utilize systems thinking and remote sensing techniques to explore how the Earth's surface exhibits signs of human-induced changes, such as climate change and civil war.</p>
-				<p>I am also passionate about applying research findings outside of labs to improve how communities interact with the environment. I have founded a forest conservation non-profit in Japan and collaborated with urban gardens to analyze their socio-ecological functions in downtown Buenos Aires.</p>
-				<p>In my pastime, I enjoy dancing to funk music, watching movies, and designing scientific illustrations.</p>
-				<i><a href="PDFs/Shimizu_resume.pdf" target="_blank">resume</a></i>
-		    </div>
+		<div class="section cg-image-wrapper">
+			<img id="image25" class="photos dark" src="Images/Black5.jpg" alt="Black5">
 		</div>
-	</body>
 
+		<div class="section cg-image-wrapper">
+			<img id="image24" class="photos dark" src="Images/Black3.jpg" alt="Black3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image12" class="photos dark" style="filter: brightness(0.7);" src="Images/White6.jpg" alt="White6">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image11" class="photos dark" style="filter: brightness(0.7);" src="Images/Pink2.jpg" alt="Pink2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image10" class="photos dark" style="filter: brightness(0.7);" src="Images/Pink1.jpg" alt="Pink1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image8" class="photos dark" src="Images/Green3.jpg" alt="Green3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image9" class="photos dark" src="Images/Green4.jpg" alt="Green4">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image14" class="photos dark" src="Images/White1.jpg" alt="White1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image13" class="photos dark" src="Images/White4.jpg" alt="White4">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image1" class="photos dark" src="Images/Orange2.jpg" alt="Orange2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image16" class="photos dark" src="Images/White2.jpg" alt="White2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image15" class="photos dark" src="Images/White3.jpg" alt="White3">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image19" class="photos light" src="Images/Yellow2.jpg" alt="Yellow2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image19" class="photos light" src="Images/Yellow4.jpg" alt="Yellow2">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image17" class="photos dark" src="Images/Yellow1.jpg" alt="Yellow1">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image6" class="photos dark" src="Images/White5.jpg" alt="White5">
+		</div>
+		<div class="section cg-image-wrapper">
+			<img id="image20" class="photos light" src="Images/Blue1.jpg" alt="Blue1">
+		</div>
+    </div>
+</body>
 </html>
+<script>
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+    new fullpage('#fullpage', {
+        autoScrolling:true,
+        scrollHorizontally: true
+    });
+
+
+    const navbarAnchors = document.querySelectorAll('.dynamicColor');
+		const images = document.querySelectorAll('.photos');
+
+		const changeNavbarColor = (entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					if (entry.target.classList.contains('light')) {
+						navbarAnchors.forEach(anchor => {
+							anchor.classList.add('whiteFont');
+							anchor.classList.remove('blackFont');
+						});
+					} else if (entry.target.classList.contains('dark')) {
+						navbarAnchors.forEach(anchor => {
+							anchor.classList.add('blackFont');
+							anchor.classList.remove('whiteFont');
+						});
+					}
+				}
+			});
+		};
+
+		const observer = new IntersectionObserver(changeNavbarColor, {
+			threshold: 0.5,
+		});
+
+		images.forEach(image => {
+			observer.observe(image);
+		});
+
+</script>
