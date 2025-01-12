@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飛行解析の概要</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .grid-container {
+            margin-left: 15%;
+            margin-top: 5%;
+            width: 75%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .grid-item h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        figure {
+            margin-top: 20px;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+
+        figure figcaption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar-nav">
+        <a href="index.html">Top</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="photos.html">Films</a>
+        <a href="lesson1.html">Beta</a>
+    </div>
+    <div id="content" class="grid-container">
+        <div class="grid-item item-1">
+            <h2>飛行解析の概要</h2>
+            <p>
+                飛行解析とは、機体にかかる荷重や打ち上げ経路を算出する作業で、機体設計の要件定義や飛行実施前の安全性検証に重要な役割を果たす。
+                例えば、飛行中の挙動を大きく左右する要因として、ロケットにかかる動圧(q)がある。動圧は以下の式で表される。
+            </p>
+            <p>
+                <span id="mathjax-container">\(q= \frac{1}{2} \rho V^2 \)</span>
+                <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            </p>
+            <p>
+                打ち上げ後、飛行が進むにつれて空気密度が減少し速度が増加する。この2つの変数が交差する地点を MaxQ と呼ぶ。MaxQでは機体にかかる動圧が最大となるため、この時の最大荷重を基に機体構造の設計要件を算出する。
+                また、高高度では秒速50 mを超えるジェット気流が発生することもあり、ロケットの強度に対する風の影響を考慮する必要がある。特に、迎角（ロケット軸と風向の角度）が大きくなると、機体に過剰な力が加わり空中分解する可能性がある。そのため、打ち上げ地点付近の風データを取得し、シミュレーションに組み込むことで、必要な構造強度を事前に検証する。
+            </p>
+            <h3>スクリプト内容</h3>
+            <ul>
+                <li>JSONファイル：基本要件定義</li>
+                <li>MATLABファイル：JSONファイルの読み込み、運動方程式の計算、グラフ出力、飛行経路のKML化の実施</li>
+            </ul>
+        </div>
+        <div class="grid-item item-2">
+            <h3>出力ファイル</h3>
+            <ul>
+                <li>飛行グラフ</li>
+                <li>飛行経路</li>
+            </ul>
+            <figure>
+                <img src="/Users/yshimizu/Documents/portfolio/Images/download.png" alt="Rocket Altitude Graph">
+                <figcaption>MCMCシミュレーションによるロケット飛行高度の変化</figcaption>
+            </figure>
+        </div>
+        <div class="grid-item item-1">
+            <h2>大規模言語モデルを用いた自動ファイル判別機能</h2>
+            <p>
+                ISC社内で作成されるファイルは即時にAWSのデータベースに保存される。これまで集約されてきた全データの保存先を整理することで、データベースの可読性を向上し、ユーザーが必要な情報に瞬時にアクセスできる様にする。
+            </p>
+            <p>
+                主な手法として、大規模言語モデル（LLM）を用いる事で、効率的にファイル判別を行う。各ファイルのテキストや画像を読み込ませて、内容と文脈からファイル仕訳を行う。これまでのLLM利用例では、API連携することで、社外秘ファイルを公開してしまう懸念があったが、ollamaを用いてチューニング済みモデルをローカル環境のみで実行することで、情報を社内に留める。
+            </p>
+            <p>
+                また、テキストや画像以外にも、CADファイルはPythonコードで可視化したものをLLMに入力することで判別可能とする。また、ファイル整理の際は命名規則を元にファイル名を上書きしたり、人を介在したディレクトリの管理も行える。
+            </p>
+        </div>
+    </div>
+</body>
+</html>
